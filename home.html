@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div>
+      <div class="nav">
+        <h2>ReservasWEB</h2>
+        <p>El lugar de tu sueño a solo un click</p>
+        <div>
+          <button id="btn-login">Iniciar sesion</button>
+          <button id="btn-signIn"><a href="">Registrarse</a></button>
+        </div>
+      </div>
+      <div class="hero"></div>
+      <div class="section">
+        <section>
+          <div>
+            <h2>En cada reserva contamos con: (adaptado al servicio)</h2>
+          </div>
+        </section>
+        <section>
+          <div>
+            <div class="optiones reservas">
+              <p class="labels">Reservas inmediatas</p>
+            </div>
+            <div class="optiones usuario">
+              <p class="labels">Usuario para ver tus reservas</p>
+            </div>
+          </div>
+          <div>
+            <div class="optiones cancelar">
+              <p class="labels">Cancelaciones inmediatas</p>
+            </div>
+            <div class="optiones desayuno">
+              <p class="labels">Desayunos incluidos</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- modal  login-->
+      <div id="modal" class="close">
+        <div id="cruce">x</div>
+        <h1>Iniciar sesion</h1>
+        <input id="txt-name" type="text" placeholder="Nombre" />
+        <input id="txt-password" type="password" placeholder="contraseña" />
+        <button>Acceder</button>
+      </div>
+
+      <!-- modal register -->
+      <div id="modal-signIn" class="close">
+        <div id="cruce2">x</div>
+        <h1>Registrarse</h1>
+        <input id="txt-name" type="text" placeholder="Nombre" />
+        <input id="txt-name-user" type="text" placeholder="Nombre de usuario" />
+        <input id="txt-password" type="password" placeholder="contraseña" />
+        <button>Registrarme</button>
+      </div>
+
+
+    </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

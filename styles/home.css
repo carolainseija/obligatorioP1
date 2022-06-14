@@ -1,0 +1,165 @@
+* {
+  font-family: "Hind Madurai", sans-serif;
+}
+.nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(223, 215, 215);
+  background-color: rgb(19, 17, 141);
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(199, 210, 211);
+  border: none;
+  color: blue;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(198, 198, 241);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desayuno {
+  width: auto;
+  height: auto;
+  background-image: url("../assets/dea.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reservas {
+  width: auto;
+  height: auto;
+  background-image: url("../assets/res.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+.section {
+  width: 80%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(231, 238, 238); */
+  /* color: rgb(19, 17, 141); */
+  margin: auto;
+}
+.section_two {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  /* width: 60%; */
+  height: auto;
+  text-align: center;
+  margin: auto;
+  /* background-color: black; */
+  /* background-color: blue; */
+  /* display: flex; */
+  /* justify-content: cenkkkkkkkkkkkkkkkkkkkkkkter; */
+}
+section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua;  */
+}
+.usuario {
+  width: auto;
+  height: auto;
+  background-image: url("../assets/users.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cancelar {
+  width: auto;
+  height: auto;
+  background-image: url("../assets/cancel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.optiones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 2px solid gray;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.labels {
+  color: white;
+  background-color: black;
+}
+
+h2 {
+  width: 50%;
+}
+
+/* Modal */
+#cruce {
+  cursor: pointer;
+  font-size: 30px;
+}
+#cruce2 {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border-radius: 1px solid;
+  margin: 10px auto;
+}
+
+.open {
+  width: 70%;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  visibility: visible;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(194, 181, 181, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.close {
+  display: none;
+  visibility: hidden;
+}
