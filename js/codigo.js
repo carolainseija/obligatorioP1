@@ -9,7 +9,6 @@ function Precargar() {
     let a2 = altaLocal("Rumba bar", "rumbabar", "contraseñaderumba", "Restaurante", "restaurante.jpg#", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "Pendiente")
     //cuando voy a armar la tabla pngo img src="./ AQUI FOTO que vale "museo.jpg"
     // FuncionesPersona();, 
-    
 }
 
 
@@ -46,15 +45,12 @@ function altaLocal(nombre, usuario, contraseña, tipo, direccion, foto, estado) 
 }
 
 
-document.querySelector("#btn-registrar").addEventListener("click", Registrarse)
+// document.querySelector("#btn-registrarse").addEventListener("click", Registrarse)
 
-
-    
-
-function Registrarse() {
-    let valorUsario = document.querySelector("#usuario").value;
-    let valorNombre = document.querySelector("#nombre").value;
-    let valorContraseña = document.querySelector("#contraseña").value;
-    let nuevalta = altaPersona(valorUsario, valorNombre, valorContraseña)
-    return nuevaAlta;
-}
+// function Registrarse() {
+//     let valorUsario = document.querySelector("#usuario").value;
+//     let valorNombre = document.querySelector("#nombre").value;
+//     let valorContraseña = document.querySelector("#contraseña").value;
+//     let nuevalta = altaPersona(valorUsario, valorNombre, valorContraseña)
+//     return nuevaAlta;
+// }
