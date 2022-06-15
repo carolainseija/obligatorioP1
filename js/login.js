@@ -2,10 +2,10 @@
 document.querySelector("#btn-acceder").addEventListener("click", login)
 
 function login() {
-  tdLogin()
+  eventsLogin()
 }
 
-function tdLogin() {
+function eventsLogin() {
   let username = document.querySelector("#txt-nameLogin").value;
   let password = document.querySelector("#txt-passwordLogin").value;
 
@@ -14,7 +14,7 @@ function tdLogin() {
     userLogin = find;
     console.log("find ok")
   } else {
-    console.log("no te has logueado")
+    document.querySelector("#text-error").innerHTML = "Alguno de tus datos no coincide"
   }
 
 }
