@@ -31,6 +31,6 @@ function verifyExistUser(name, password) {
 }
 
 
-function mjeError(error, msj) {
+function msjError(error, msj) {
     error.innerHTML = `${msj}`
 }

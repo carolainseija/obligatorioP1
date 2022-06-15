@@ -2,6 +2,7 @@ newFunction("btn-acceder", login)
 let classContent = document.querySelector("#contentUser").classList;
 let classNav = document.querySelector("#nav-buttons").classList;
 let classViewUser = document.querySelector("#view-user").classList;
+let errorLg = document.querySelector("#text-errorLg");
 
 function login() {
   eventsLogin()
@@ -15,7 +16,7 @@ function eventsLogin() {
     userLogin = find;
     mostrarDisplayuser();
   } else {
-    document.querySelector("#text-error").innerHTML = "El usuario y/o la contraseña no son válidos"
+    msjError(errorLg, "El usuario y/o la contraseña no son válidos")
   }
 }
 
