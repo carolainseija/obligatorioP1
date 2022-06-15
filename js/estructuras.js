@@ -1,16 +1,18 @@
 let arrayPersonas = [];
 let arrayReservas = [];
 let arrayLocal = [];
+
+let userLogin = null;
 //hago una tabla con los locales
 //genero el boton dinamicamente que quede con el id asociado
 
 let ultimoIdLocal = 1;
 class Local {
-  constructor(name, usuario, contraseña, tipo, direccion, foto, estado) {
+  constructor(nombre, usuario, contraseña, tipo, direccion, foto, estado) {
     //el id no lo muestro ene l constructor porque no viene de afuera, ya se genera automaticamente.
     this.id = ultimoIdLocal;
     ultimoIdLocal++;
-    this.name = name;
+    this.nombre = nombre;
     this.usuario = usuario;
     this.contraseña = contraseña;
     this.tipo = tipo;

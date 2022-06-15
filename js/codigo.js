@@ -7,8 +7,10 @@ function Precargar() {
     let r2 = altaReserva("Festival", "finalizada", "50", "80")
     let l1 = altaLocal("Museo america", "museodeamerica", "contraeñaamerica", "Museo", "museo.jpg", "Av. Millán 4015, 11700 Montevideo, Departamento de Montevideo", "Pendiente")
     let a2 = altaLocal("Rumba bar", "rumbabar", "contraseñaderumba", "Restaurante", "restaurante.jpg#", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "Pendiente")
-    //cuando voy a armar la tabla pngo img src="./ AQUI FOTO que vale "museo.jpg"
-    // FuncionesPersona();, 
+    let a3 = altaLocal("Rumba", "rumba", "rumba", "Restaurante", "restaurante.jpg#", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "Pendiente")
+    
+    console.log(arrayLocal)
+    console.log(arrayPersonas)
 }
 
 

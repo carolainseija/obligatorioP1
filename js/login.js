@@ -1,29 +1,34 @@
-document.querySelector("#btn-login").addEventListener("click", openModal)
 
-let modalLogin = document.querySelector("#modal").classList;
-function openModal() {
-  modalLogin.remove("close")
-  modalLogin.add("open")
-  //esto es por si modal login esta abierto, quiero que lo cierre
-  modalSignIn.remove("open")
+document.querySelector("#btn-acceder").addEventListener("click", login)
+
+function login() {
+  tdLogin()
 }
 
+function tdLogin() {
+  let username = document.querySelector("#txt-nameLogin").value;
+  let password = document.querySelector("#txt-passwordLogin").value;
 
-// modal 2
-document.querySelector("#btn-signIn").addEventListener("click", openModalSign)
+  let find = verifyExistUser(username, password);
+  if (find != null) {
+    userLogin = find;
+    console.log("find ok")
+  } else {
+    console.log("no te has logueado")
+  }
 
-let modalSignIn = document.querySelector("#modal-signIn").classList;
-
-function openModalSign() {
-  modalSignIn.remove("close")
-  modalSignIn.add("open")
-  modalLogin.remove("open")
 }
 
-// ambops
-document.querySelector("#cruce").addEventListener("click", changeStateModal)
-document.querySelector("#cruce2").addEventListener("click", changeStateModal)
-function changeStateModal(){
-  modalLogin.add("close")
-  modalSignIn.add("close")
+function verifyExistUser(name, password) {
+  let userFind = null;
+  for (let persona of arrayPersonas) {
+    //si encuentro que Array persona tiene person.name
+    if (persona.nombre == name && persona.contraseña == password) {
+      //una pocicion del array es igual a esta que declaraste en el input
+      console.log("per", persona)
+      userFind = persona;
+    }
+  }
+  return userFind;
 }
+
