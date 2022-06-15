@@ -5,9 +5,11 @@ function Precargar() {
     let p2 = altaPersona("Marcos", "marcos02", "contraseña2")
     let r1 = altaReserva("Parque diversiones", "Pendiente", "100", "10")
     let r2 = altaReserva("Festival", "finalizada", "50", "80")
-    let l1 = altaLocal("Museo america", "museodeamerica", "contraeñaamerica", "Museo", "museo.jpg", "Av. Millán 4015, 11700 Montevideo, Departamento de Montevideo", "Pendiente")
-    let a2 = altaLocal("Rumba bar", "rumbabar", "contraseñaderumba", "Restaurante", "restaurante.jpg#", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "Pendiente")
-    let a3 = altaLocal("Rumba", "rumba", "rumba", "Restaurante", "restaurante.jpg#", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "Pendiente")
+    let l1 = altaLocal("Museo america", "museodeamerica", "contraeñaamerica", "Museo", "Av. Millán 4015, 11700 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
+    let a2 = altaLocal("Rumba bar", "rumbabar", "contraseñaderumba", "Restaurante", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
+    let a3 = altaLocal("Rumba", "rumba", "rumba", "Restaurante", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
+    let a4 = altaLocal("museo", "museos", "rumba", "Restaurante", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
+
 }
 
 
@@ -42,3 +44,18 @@ function altaLocal(nombre, usuario, contraseña, tipo, direccion, foto, estado) 
     }
     return local;
 }
+
+
+function viewLocals() {
+    let allLocals = "";
+    for (let locals of arrayLocal) {
+        allLocals += `<div class="cards">
+                       <img src="../assets/${locals.foto}" />
+                        <div>
+                        <h3>${locals.nombre}</h3>
+                        <p>${locals.direccion}</p>
+                        </div>
+                    </div>`}
+    document.querySelector("#services").innerHTML = allLocals;
+}
+viewLocals()
