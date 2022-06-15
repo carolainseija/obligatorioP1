@@ -32,91 +32,8 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.desayuno {
-  width: auto;
-  height: auto;
-  background-image: url("../assets/dea.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.reservas {
-  width: auto;
-  height: auto;
-  background-image: url("../assets/res.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 a {
   text-decoration: none;
-}
-.section {
-  width: 80%;
-  height: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: space-between;
-  /* background-color: rgb(231, 238, 238); */
-  /* color: rgb(19, 17, 141); */
-  margin: auto;
-}
-.section_two {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-section {
-  /* width: 60%; */
-  height: auto;
-  text-align: center;
-  margin: auto;
-  /* background-color: black; */
-  /* background-color: blue; */
-  /* display: flex; */
-  /* justify-content: cenkkkkkkkkkkkkkkkkkkkkkkter; */
-}
-section div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* background-color: aqua;  */
-}
-.usuario {
-  width: auto;
-  height: auto;
-  background-image: url("../assets/users.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.cancelar {
-  width: auto;
-  height: auto;
-  background-image: url("../assets/cancel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.optiones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  border: 2px solid gray;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  color: white;
-}
-
-.labels {
-  color: white;
-  background-color: black;
 }
 
 h2 {
@@ -167,4 +84,24 @@ input {
 .error {
   color: red;
   font-size: 20px;
+}
+
+/*class content user*/
+.content {
+  display: flex;
+  visibility: visible;
+}
+.content-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.view-user {
+ display: flex;
+ visibility: visible;
+}
+
+.not-view-user {
+ display: none;
+ visibility: hidden;
 }

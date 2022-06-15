@@ -17,45 +17,29 @@
     <div>
       <div class="nav">
         <h2>ReservasWEB</h2>
-        <p>El lugar de tu sueño a solo un click</p>
-        <div>
+        <div id="view-user" class="not-view-user">
+          <p id="textUser">Bienvenido:</p>
+        </div>
+        <div id="nav-buttons">
+          <p>El lugar de tu sueño a solo un click</p>
           <button id="btn-login">Iniciar sesion</button>
           <button id="btn-signIn"><a href="">Registrarse</a></button>
         </div>
       </div>
       <div class="hero"></div>
-      <div class="section">
-        <section>
-          <div>
-            <h2>En cada reserva contamos con: (adaptado al servicio)</h2>
-          </div>
-        </section>
-        <section>
-          <div>
-            <div class="optiones reservas">
-              <p class="labels">Reservas inmediatas</p>
-            </div>
-            <div class="optiones usuario">
-              <p class="labels">Usuario para ver tus reservas</p>
-            </div>
-          </div>
-          <div>
-            <div class="optiones cancelar">
-              <p class="labels">Cancelaciones inmediatas</p>
-            </div>
-            <div class="optiones desayuno">
-              <p class="labels">Desayunos incluidos</p>
-            </div>
-          </div>
-        </section>
+      <div id="contentUser" class="content-hidden">
+        <h1>Ahora estas Logueado!!!</h1>
       </div>
-
       <!-- modal  login-->
       <div id="modal" class="close">
         <div id="cruce">x</div>
         <h1>Iniciar sesion</h1>
         <input id="txt-nameLogin" type="text" placeholder="Nombre" />
-        <input id="txt-passwordLogin" type="password" placeholder="contraseña" />
+        <input
+          id="txt-passwordLogin"
+          type="password"
+          placeholder="contraseña"
+        />
         <button id="btn-acceder">Acceder</button>
         <p id="text-error" class="error"></p>
       </div>
@@ -69,8 +53,6 @@
         <input id="txt-password" type="password" placeholder="contraseña" />
         <button>Registrarme</button>
       </div>
-
-
     </div>
     <script src="/js/structure.js"></script>
     <script src="/js/preload.js"></script>
