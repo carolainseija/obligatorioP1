@@ -1,18 +1,16 @@
 document.querySelector("#btn-acceder").addEventListener("click", login)
+let classContent = document.querySelector("#contentUser").classList;
+let classNav = document.querySelector("#nav-buttons").classList;
+let classViewUser = document.querySelector("#view-user").classList;
+let textUser = document.querySelector("text-user");
 
 function login() {
   eventsLogin()
 }
 
-
-function classes(vble, classe, classe2) {
-  vble.remove(classe)
-  vble.add(classe2)
-}
 function eventsLogin() {
   let username = document.querySelector("#txt-nameLogin").value;
   let password = document.querySelector("#txt-passwordLogin").value;
-
   let find = verifyExistUser(username, password);
   if (find != null) {
     userLogin = find;
@@ -22,13 +20,8 @@ function eventsLogin() {
   }
 }
 
-let classContent = document.querySelector("#contentUser").classList;
-let classNav = document.querySelector("#nav-buttons").classList;
-let classViewUser = document.querySelector("#view-user").classList;
-let textUser = document.querySelector("text-user");
 
 function mostrarDisplayuser() {
-  console.log("lego a la funcion")
   if (userLogin != null) {
     classes(classContent, "content-hidden", "content")
     classes(classModalLogin, "open", "close")
