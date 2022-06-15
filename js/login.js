@@ -16,10 +16,9 @@ function eventsLogin() {
     userLogin = find;
     mostrarDisplayuser();
   } else {
-    document.querySelector("#text-error").innerHTML = "Alguno de tus datos no coincide"
+    document.querySelector("#text-error").innerHTML = "El usuario y/o la contraseña no son válidos"
   }
 }
-
 
 function mostrarDisplayuser() {
   if (userLogin != null) {
