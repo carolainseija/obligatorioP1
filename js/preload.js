@@ -8,9 +8,6 @@ function Precargar() {
     let l1 = altaLocal("Museo america", "museodeamerica", "contraeñaamerica", "Museo", "museo.jpg", "Av. Millán 4015, 11700 Montevideo, Departamento de Montevideo", "Pendiente")
     let a2 = altaLocal("Rumba bar", "rumbabar", "contraseñaderumba", "Restaurante", "restaurante.jpg#", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "Pendiente")
     let a3 = altaLocal("Rumba", "rumba", "rumba", "Restaurante", "restaurante.jpg#", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "Pendiente")
-    
-    console.log(arrayLocal)
-    console.log(arrayPersonas)
 }
 
 
@@ -45,14 +42,3 @@ function altaLocal(nombre, usuario, contraseña, tipo, direccion, foto, estado) 
     }
     return local;
 }
-
-
-// document.querySelector("#btn-registrarse").addEventListener("click", Registrarse)
-
-// function Registrarse() {
-//     let valorUsario = document.querySelector("#usuario").value;
-//     let valorNombre = document.querySelector("#nombre").value;
-//     let valorContraseña = document.querySelector("#contraseña").value;
-//     let nuevalta = altaPersona(valorUsario, valorNombre, valorContraseña)
-//     return nuevaAlta;
-// }
