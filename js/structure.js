@@ -20,7 +20,6 @@ class Local {
     this.foto = foto;
     this.estado = estado;
   }
-  //set o getters
 }
 
 

@@ -1,4 +1,4 @@
-document.querySelector("#btn-acceder").addEventListener("click", login)
+newFunction("btn-acceder", login)
 let classContent = document.querySelector("#contentUser").classList;
 let classNav = document.querySelector("#nav-buttons").classList;
 let classViewUser = document.querySelector("#view-user").classList;
@@ -37,7 +37,6 @@ function verifyExistUser(name, password) {
     //si encuentro que Array persona tiene person.name
     if (persona.nombre == name && persona.contraseña == password) {
       //una pocicion del array es igual a esta que declaraste en el input
-      console.log("per", persona)
       userFind = persona;
     }
   }
@@ -45,7 +44,6 @@ function verifyExistUser(name, password) {
     //si encuentro que Array persona tiene person.name
     if (local.nombre == name && local.contraseña == password) {
       //una pocicion del array es igual a esta que declaraste en el input
-      console.log("per", local)
       userFind = local;
     }
   }

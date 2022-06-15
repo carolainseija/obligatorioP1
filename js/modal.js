@@ -1,24 +1,22 @@
-document.querySelector("#btn-login").addEventListener("click", openModal)
-
 let classModalLogin = document.querySelector("#modal").classList;
+let classModalRegister = document.querySelector("#modal-signIn").classList;
+
+newFunction("btn-login", openModal)
+
 function openModal() {
-  classModalLogin.remove("close")
-  classModalLogin.add("open")
+  classes(classModalLogin, "close", "open")
   classModalRegister.remove("open")
 }
 
-
-document.querySelector("#btn-signIn").addEventListener("click", openModalSign)
-let classModalRegister = document.querySelector("#modal-signIn").classList;
+newFunction("btn-signIn", openModalSign)
 
 function openModalSign() {
-  classModalRegister.remove("close")
-  classModalRegister.add("open")
+  classes(classModalRegister, "close", "open")
   classModalLogin.remove("open")
 }
 
-document.querySelector("#cruce").addEventListener("click", changeStateModal)
-document.querySelector("#cruce2").addEventListener("click", changeStateModal)
+newFunction("cruce", changeStateModal)
+newFunction("cruce2", changeStateModal)
 
 function changeStateModal() {
   classModalLogin.add("close")
