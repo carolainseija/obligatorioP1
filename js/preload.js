@@ -45,7 +45,6 @@ function altaLocal(nombre, usuario, contraseña, tipo, direccion, foto, estado) 
     return local;
 }
 
-
 function viewLocals() {
     let allLocals = "";
     for (let locals of arrayLocal) {
@@ -54,18 +53,19 @@ function viewLocals() {
                         <div>
                         <h3>${locals.nombre}</h3>
                         <p>${locals.direccion}</p>
+                        <input type="button" class="btn-reserve" id="btn${locals.Id}" value="Reservar ahora">
                         </div>
                     </div>`}
     document.querySelector("#services").innerHTML = allLocals;
-    let todobtn = document.querySelector("btn-add");
-    for (let button of todobtn) {
-        button.addEventListener("click", tdAlquiler)
+    let allbtn = document.querySelector("btn-add");
+    for (let button of allbtn) {
+        button.addEventListener("click", saveReserve)
     }
 
 }
 viewLocals()
 
 
-function saveReserva() {
+function saveReserve() {
     console.log("reserva guardada")
 }
