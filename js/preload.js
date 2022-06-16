@@ -6,9 +6,9 @@ function Precargar() {
     let r1 = altaReserva("Parque diversiones", "Pendiente", "100", "10")
     let r2 = altaReserva("Festival", "finalizada", "50", "80")
     let l1 = altaLocal("Museo america", "museodeamerica", "contraeñaamerica", "Museo", "Av. Millán 4015, 11700 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
-    let a2 = altaLocal("Rumba bar", "rumbabar", "contraseñaderumba", "Restaurante", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
-    let a3 = altaLocal("Rumba", "rumba", "rumba", "Restaurante", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
-    let a4 = altaLocal("museo", "museos", "rumba", "Restaurante", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "blanes.jpg", "Pendiente")
+    let a2 = altaLocal("Rumba bar", "rumbabar", "contraseñaderumba", "Restaurante", "Dr. Héctor Miranda 2427, 11300 Montevideo, Departamento de Montevideo", "rumba.jpg", "Pendiente")
+    let a3 = altaLocal("Sofitel Athens Airport", "sofitel", "sofi", "Restaurante", "Rambla Republica de Mexico s/n, Carrasco, 11500 Montevideo, Uruguay", "sofitel.jpg", "Pendiente")
+    let a4 = altaLocal("Solis", "museos", "solis", "Teatro", "Buenos Aires s/n esquina Bartolomé Mitre. 1950 3323", "solis.webp", "Pendiente")
 
 }
 
@@ -57,5 +57,15 @@ function viewLocals() {
                         </div>
                     </div>`}
     document.querySelector("#services").innerHTML = allLocals;
+    let todobtn = document.querySelector("btn-add");
+    for (let button of todobtn) {
+        button.addEventListener("click", tdAlquiler)
+    }
+
 }
 viewLocals()
+
+
+function saveReserva() {
+    console.log("reserva guardada")
+}

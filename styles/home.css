@@ -90,6 +90,12 @@ input {
 .content {
   display: flex;
   visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 .content-hidden {
   display: none;
@@ -97,38 +103,42 @@ input {
 }
 
 .view-user {
- display: flex;
- visibility: visible;
+  display: flex;
+  visibility: visible;
 }
 
 .not-view-user {
- display: none;
- visibility: hidden;
-}
-
-
-.services div {
-  display: flex;
-  flex-direction: row;
+  display: none;
+  visibility: hidden;
 }
 
 .cards {
   width: 300px;
-  height: auto;
-display: flex;
-flex-direction: column;
-border: 2px solid;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  margin: 0px 10px;
 }
 img {
   width: 100%;
-  height: 20px;
+  height: 50vh;
 }
 .cards div {
+  width: auto;
+  height: auto;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 #services {
-  width: 100%;
+  width: 80%;
   height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  /* background-color: aquamarine; */
 }
