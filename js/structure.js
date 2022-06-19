@@ -8,7 +8,7 @@ let userLogin = null;
 
 let ultimoIdLocal = 1;
 class Local {
-  constructor(nombre, usuario, contraseña, tipo, direccion, foto, estado) {
+  constructor(nombre, usuario, contraseña, tipo, direccion,cupomax, foto) {
     //el id no lo muestro ene l constructor porque no viene de afuera, ya se genera automaticamente.
     this.id = ultimoIdLocal;
     ultimoIdLocal++;
@@ -18,8 +18,9 @@ class Local {
     this.tipo = tipo;
     this.direccion = direccion;
     this.foto = foto;
-    this.estado = estado;
-  }
+    this.cupomax = cupomax ;  
+    this.estado = true; //habilitado o desabilotado, pero siempre por ahora lo vamos a habiltar
+}
 }
 
 
@@ -39,16 +40,18 @@ class Persona {
 //con los ids puedo recorrer el array y encontrar os demas datos.
 
 let ultimaIdReservas = 1;
+//las reservas pueden tener pendientes , finalizadas, canceladas
 class Reserva {
-  //ID RESERVAS, PERSONA, LOCAL
-  constructor(nombre, estado, cupos, promedio) {
+  //ID RESERVAS, PERSONA, LOCAL   
+  constructor(persona, local, cupos) {
     this.id = ultimaIdReservas;
     ultimaIdReservas++;
     // this.idlocal = idlocal;
     // this.idpersona = idpersona
-    this.nombre = nombre;
-    this.estado = estado;
-    this.cupos = cupos;
-    this.promedio = promedio;
+    this.persona = persona;
+    this.local = local;
+    this.cupos = cupos; // cuantos quiero reservar
+    this.estado = "pendiente"; 
+  
   }
 }
